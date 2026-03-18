@@ -171,7 +171,7 @@ int main()
             if(event.type == Event::KeyPressed && event.key.code == Keyboard::Escape)
                 window.close();
 
-            if(event.type == Event::KeyReleased)
+            if(event.type == Event::KeyReleased && !paused)
                 acceptInput = true;
             
             spriteAxe.setPosition(2000, spriteAxe.getPosition().y);
